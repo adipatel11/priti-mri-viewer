@@ -1,0 +1,1576 @@
+/*
+ * Copyright 2006-2023 Medstrat, Inc. All rights reserved.
+ * Copyright 2024-2025 Zimmer, Inc. All rights reserved.
+ * See the accompanying AUTHORS file for a complete list of authors.
+ * This file is subject to the terms and conditions defined in LICENSE.txt
+ */
+
+/*
+    Styles in this file correspond with individual Java classes.
+    The styles are organized alphabetically by class name.
+    Make sure to keep the styles in this file organized alphabetically
+    and correspond with the appropriate Java class.
+ */
+
+/* Add Study Window */
+
+.AddStudyWindow-tableWidth {
+    min-width: 47em;
+}
+
+.AddStudyWindow-tableHeight {
+    max-height: 28em;
+}
+
+/* Add Study Window Table */
+
+.AddStudyWindowTable-smallCell {
+    min-width: 50px;
+}
+
+/* Alert */
+.Alert-dismiss-only {
+    display: none;
+}
+.alert-dismissible .Alert-dismiss-only {
+    display: initial;
+}
+
+
+/* CalibrationPreferencesPanel */
+
+input:checked + .CalibrationPreferencesPanel-highlightableLabel {
+    color: red;
+}
+
+/* Canvas Grid */
+
+.CanvasGrid-grid .CanvasGrid-cell {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.CanvasGrid-grid td {
+    padding: 0;
+}
+
+@media print {
+    .CanvasGrid-cell {
+        background-color: transparent;
+    }
+}
+
+/* Dicom Header Window */
+
+.DicomHeaderWindow-cellTable {
+    table-layout: auto !important;
+}
+
+.DicomHeaderWindow-cellTable div > span {
+    overflow: visible !important;
+    white-space: pre-wrap !important;
+}
+
+.DicomHeaderWindow-tagColumn {
+    white-space: nowrap;
+}
+
+.DicomHeaderWindow-descriptionColumn {
+    max-width: 14em;
+    min-width: 13em;
+}
+
+.DicomHeaderWindow-valueColumn {
+    white-space: nowrap;
+}
+
+/* DicomHeaderWindowTable */
+
+.DicomHeaderWindowTable-tableHeader {
+    display: ruby-text;
+    cursor: pointer;
+}
+
+/* External Page Modal */
+
+.ExternalPageModal-frame {
+    border: none;
+    max-width: 100%;
+    height: calc(80vh - 32px);
+}
+.ExternalPageModal-noMaxHeight {
+    max-height: unset;
+}
+.ExternalPageModal-modalContainer {
+    padding: 0;
+}
+.ExternalPageModal-spinner {
+    vertical-align: middle;
+    text-align: center;
+    display: none;
+}
+.ExternalPageModal-loading .ExternalPageModal-spinner {
+    display: block;
+}
+.ExternalPageModal-loading .ExternalPageModal-frame {
+    display: none;
+}
+
+/* Help Widget */
+
+.HelpWidget-helpIcon {
+    color: var(--bs-info);
+    text-decoration: none;
+    cursor: pointer;
+}
+.HelpWidget-helpIcon:hover {
+    color: var(--bs-secondary);
+}
+
+/* Image Calibration Panel */
+
+.ImageCalibrationPanel-main {
+    width: 300px;
+    min-width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    flex-basis: 1px;
+    flex-grow: 1;
+}
+
+/* Layout Preferences Panel */
+
+.LayoutPreferencesPanel-listPanel {
+    background-color: #ffffff;
+    color:black;
+    vertical-align: middle;
+}
+.LayoutPreferencesPanel-listPanel > div > table > tbody > tr > td {
+    vertical-align:middle;
+}
+.LayoutPreferencesPanel-gridPref .LayoutPreferencesPanel-cell {
+    width: 100%;
+    height: 100%;
+    display: table;
+    background: white;
+}
+
+/* Layout Preferences Table */
+
+.LayoutPreferencesTable-rowPointer {
+    cursor: pointer;
+}
+
+/* Loading Thumbnail */
+
+img[src]+.LoadingThumbnail-loadingPanel {
+    display: none!important;
+}
+
+/* MagnificationPreferencesPanel */
+
+.MagnificationPreferencesPanel-magTable {
+    cursor: pointer;
+}
+
+.MagnificationPreferencesPanel-magTable input {
+    width: 2.1em;
+}
+
+/* MagnificationPreferencesTable */
+
+.MagnificationPreferencesTable-frontalInputWidth {
+    width: 40px;
+}
+
+/* OrientationPanel */
+
+.OrientationPanel-border{
+    border: 1px solid white;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    margin-top: 5px;
+    line-height: 15px;
+}
+.OrientationPanel-letterOne{
+    margin: auto;
+    text-align: center;
+}
+.OrientationPanel-letterTwo{
+    margin: auto;
+    text-align: center;
+}
+.OrientationPanel-letterThree{
+    margin: auto;
+    text-align: center;
+}
+.OrientationPanel-letterFour{
+    margin: auto;
+    text-align: center;
+}
+
+.OrientationPanel-box {
+    position: relative;
+    border: 1px solid white;
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+}
+
+.OrientationPanel-box * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* OverlayPanel */
+
+.OverlayPanel-important {
+    font-weight: bold;
+}
+.OverlayPanel-unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.OverlayPanel-overlayLabel {
+    color: #ffffff;
+    text-shadow: 1px 1px #000000;
+    margin: 2px;
+    overflow-wrap: break-word;
+}
+.OverlayPanel-hiddenScrollbars {
+    overflow: hidden !important;
+}
+.OverlayPanel-orientation {
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:unset !important;
+}
+.OverlayPanel-spineLabels {
+    text-align:center;
+}
+.OverlayPanel-saveIconColor {
+    color: #eb4747;
+}
+.OverlayPanel-overlayLabel .gwt-Label {
+    color: var(--overlay-label-color) !important;
+    text-shadow: 1px 1px #000000 !important;
+}
+.OverlayPanel-overlayStyle {
+    color: var(--overlay-foreground-color) !important;
+    font-weight: bold;
+}
+
+.OverlayPanel-highlighted {
+    color: yellow;
+    font-weight: bold;
+}
+
+.OverlayPanel-cup {
+    color: var(--overlay-color-cup);
+    font-weight: bold;
+}
+
+.OverlayPanel-stem {
+    color: var(--overlay-color-stem);
+    font-weight: bold;
+}
+
+.OverlayPanel-femoral {
+    color: var(--overlay-color-femoral);
+    font-weight: bold;
+}
+
+.OverlayPanel-tibial {
+    color: var(--overlay-color-tibial);
+    font-weight: bold;
+}
+
+.OverlayPanel-sleeve {
+    color: var(--overlay-color-sleeve);
+    font-weight: bold;
+}
+
+.OverlayPanel-distal-stem {
+    color: var(--overlay-color-distal-stem);
+    font-weight: bold;
+}
+
+.OverlayPanel-bearing {
+    color: var(--overlay-color-bearing);
+    font-weight: bold;
+}
+
+.OverlayPanel-blade {
+    color: var(--overlay-color-blade);
+    font-weight: bold;
+}
+
+.OverlayPanel-bodies {
+    color: var(--overlay-color-bodies);
+    font-weight: bold;
+}
+
+.OverlayPanel-carpal {
+    color: var(--overlay-color-carpal);
+    font-weight: bold;
+}
+
+.OverlayPanel-cup-insert {
+    color: var(--overlay-color-cup-insert);
+    font-weight: bold;
+}
+
+.OverlayPanel-end-cap {
+    color: var(--overlay-color-end-cap);
+    font-weight: bold;
+}
+
+.OverlayPanel-femoral-adapter {
+    color: var(--overlay-color-femoral-adapter);
+    font-weight: bold;
+}
+
+.OverlayPanel-femoral-sleeve {
+    color: var(--overlay-color-femoral-sleeve);
+    font-weight: bold;
+}
+
+.OverlayPanel-femoral-stem-extension {
+    color: var(--overlay-color-femoral-stem-extension);
+    font-weight: bold;
+}
+
+.OverlayPanel-glenoid {
+    color: var(--overlay-color-glenoid);
+    font-weight: bold;
+}
+
+.OverlayPanel-graft-tube {
+    color: var(--overlay-color-graft-tube);
+    font-weight: bold;
+}
+
+.OverlayPanel-head {
+    color: var(--overlay-color-head);
+    font-weight: bold;
+}
+
+.OverlayPanel-hook {
+    color: var(--overlay-color-hook);
+    font-weight: bold;
+}
+
+.OverlayPanel-humeral-stem {
+    color: var(--overlay-color-humeral-stem);
+    font-weight: bold;
+}
+
+.OverlayPanel-insert {
+    color: var(--overlay-color-insert);
+    font-weight: bold;
+}
+
+.OverlayPanel-metaphysis {
+    color: var(--overlay-color-metaphysis);
+    font-weight: bold;
+}
+
+.OverlayPanel-nail {
+    color: var(--overlay-color-nail);
+    font-weight: bold;
+}
+
+.OverlayPanel-neck {
+    color: var(--overlay-color-neck);
+    font-weight: bold;
+}
+
+.OverlayPanel-phalange {
+    color: var(--overlay-color-phalange);
+    font-weight: bold;
+}
+
+.OverlayPanel-plate {
+    color: var(--overlay-color-plate);
+    font-weight: bold;
+}
+
+.OverlayPanel-proximal-stem {
+    color: var(--overlay-color-proximal-stem);
+    font-weight: bold;
+}
+
+.OverlayPanel-radial {
+    color: var(--overlay-color-radial);
+    font-weight: bold;
+}
+
+.OverlayPanel-resurfacing-head {
+    color: var(--overlay-color-resurfacing-head);
+    font-weight: bold;
+}
+
+.OverlayPanel-revision {
+    color: var(--overlay-color-revision);
+    font-weight: bold;
+}
+
+.OverlayPanel-screw {
+    color: var(--overlay-color-screw);
+    font-weight: bold;
+}
+
+.OverlayPanel-shell {
+    color: var(--overlay-color-shell);
+    font-weight: bold;
+}
+
+.OverlayPanel-spacer {
+    color: var(--overlay-color-spacer);
+    font-weight: bold;
+}
+
+.OverlayPanel-stem-plug {
+    color: var(--overlay-color-stem-plug);
+    font-weight: bold;
+}
+
+.OverlayPanel-talar {
+    color: var(--overlay-color-talar);
+    font-weight: bold;
+}
+
+.OverlayPanel-tibial-base-component {
+    color: var(--overlay-color-tibial-base-component);
+    font-weight: bold;
+}
+
+.OverlayPanel-tibial-cap {
+    color: var(--overlay-color-tibial-cap);
+    font-weight: bold;
+}
+
+.OverlayPanel-tibial-extension {
+    color: var(--overlay-color-tibial-extension);
+    font-weight: bold;
+}
+
+.OverlayPanel-tibial-plate {
+    color: var(--overlay-color-tibial-plate);
+    font-weight: bold;
+}
+
+.OverlayPanel-tibial-sleeve {
+    color: var(--overlay-color-tibial-sleeve);
+    font-weight: bold;
+}
+
+.OverlayPanel-tibial-stem-extension {
+    color: var(--overlay-color-tibial-stem-extension);
+    font-weight: bold;
+}
+
+.OverlayPanel-ulnar-stem {
+    color: var(--overlay-color-ulnar-stem);
+    font-weight: bold;
+}
+
+.OverlayPanel-wire {
+    color: var(--overlay-color-wire);
+    font-weight: bold;
+}
+
+
+/* OverlayPanelPhone */
+
+.OverlayPanelPhone-red {
+    color: #eb4747;
+}
+.OverlayPanelPhone-important {
+    font-weight: bold;
+}
+.OverlayPanelPhone-unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.OverlayPanelPhone-overlayLabel {
+    color: #ffffff;
+    text-shadow: 1px 1px #000000;
+    margin: 2px;
+}
+.OverlayPanelPhone-hiddenScrollbars {
+    overflow: hidden;
+}
+.OverlayPanelPhone-spineLabels {
+    text-align:center;
+}
+
+/* OverlaysDropdown */
+
+.OverlaysDropdown-collapseIcon {
+    transition: transform .2s ease-in-out;
+}
+.OverlaysDropdown-collapsed .OverlaysDropdown-collapseIcon {
+    transform: rotate(180deg);
+}
+.OverlaysDropdown-overlaysMenu .accordion-item {
+    border: none;
+}
+.OverlaysDropdown-overlaysMenu .btn-primary {
+    color: white;
+}
+
+
+/* OverlayToggleTable */
+
+.OverlayToggleTable-canvasOverlaySelection .btn {
+    width: 2em;
+    height: 2em;
+}
+
+/* PageWidget */
+
+@media screen {
+    .PageWidget-closeButton {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        transition: 150ms ease-in-out opacity;
+        opacity: 0;
+    }
+    .PageWidget-container:hover .PageWidget-closeButton, .PageWidget-container:focus .PageWidget-closeButton {
+        opacity: 1;
+    }
+}
+
+@media print {
+    .PageWidget-closeButton {
+        display: none;
+    }
+}
+
+/* Preferences Dialog */
+
+.PreferencesDialog-tabContent {
+    max-height: 78vh;
+    overflow-y: scroll;
+}
+
+
+/* PrintDialog */
+
+.PrintDialog-warning {
+    font-size: 0.8em;
+    color: #dc3545 !important;
+}
+hr.PrintDialog-or {
+    overflow: visible;
+    border: none;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    text-align: center;
+}
+hr.PrintDialog-or:after {
+    content: "or";
+    display: inline-block;
+    position: relative;
+    top: -0.75em;
+    font-size: 1.25em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+/* PrintImage */
+
+.PrintImage-container {
+    position: relative;
+    overflow: hidden;
+}
+.PrintImage-overlay {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.PrintImage-container > img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.PrintImage-container > img[src=""] {
+    visibility: hidden;
+}
+
+
+/* PrintLayoutPanel */
+
+.PrintLayoutPanel-main {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    max-height: 100vh;
+    overflow: scroll;
+    padding: 8px;
+    z-index: 100;
+    box-shadow: -1px 0px 6px 1px rgba(0, 0, 0, 0.15);
+}
+.PrintLayoutPanel-closeButton {
+    color: #555 !important;
+    font-size: 3em;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 1;
+    transition: transform .2s;
+}
+.PrintLayoutPanel-closeButton:hover {
+    text-decoration: none !important;
+    transform: scale(1.3);
+}
+.PrintLayoutPanel-pageWidget {
+    position: relative;
+    width: var(--page-width);
+    height: var(--page-height);
+    margin-left: auto;
+    margin-right: auto;
+}
+.PrintLayoutPanel-captureButton {
+    display: none;
+}
+.PrintLayoutPanel-pagePlaceholder {
+    display: none;
+    border: dashed #919191 10px;
+    border-radius: 8px;
+    text-align: center;
+    aspect-ratio: .75;
+}
+@media screen {
+    .PrintLayoutPanel-edit.PrintLayoutPanel-main {
+        width: 316px;
+        left: unset;
+        top: 0;
+        bottom: 0;
+        overflow: scroll;
+    }
+    .PrintLayoutPanel-edit .PrintLayoutPanel-pageWidget {
+        width: 300px;
+        height: 387px;
+    }
+    .PrintLayoutPanel-edit .PrintLayoutPanel-pageWidget > .PrintLayoutPanel-page {
+        transform-origin: top left;
+        transform: scale(0.367);
+    }
+    .PrintLayoutPanel-edit .PrintLayoutPanel-closeButton {
+        font-size: 1.5em;
+    }
+    .PrintLayoutPanel-edit .PrintLayoutPanel-captureButton {
+        display: block;
+    }
+    .PrintLayoutPanel-edit .PrintLayoutPanel-pagePlaceholder:only-child {
+        display: block;
+    }
+}
+@media print {
+    body {
+        background-color: transparent !important;
+    }
+    body > .PrintLayoutPanel-main {
+        display: contents;
+        width: max-content;
+        overflow: hidden;
+    }
+    .PrintLayoutPanel-main {
+        background-color: #fff !important;
+        padding: 0;
+        visibility: visible;
+    }
+    .PrintLayoutPanel-main ~ * {
+        display: none;
+    }
+    .PrintLayoutPanel-main * {
+        visibility: visible;
+    }
+    .PrintLayoutPanel-pageContainer {
+        display: contents;
+    }
+    .PrintLayoutPanel-pageWidget {
+        display: contents;
+    }
+}
+@page {
+    size: letter portrait;
+    margin: 48px;
+}
+
+
+
+/* PrintPage */
+
+.PrintPage-page {
+    position: relative;
+    width: var(--page-width);
+    height: var(--page-height);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    box-shadow: rgba(60, 60, 60, 0.15) 0px 1px 3px 1px;
+    border-width: 0px;
+    overflow: hidden;
+}
+.PrintPage-content {
+    position: absolute;
+    margin: var(--page-margin);
+    display: grid;
+    align-items: stretch;
+    column-gap: var(--page-content-margin);
+    grid-row-gap: var(--page-content-margin);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+@media print {
+    .PrintPage-page {
+        page-break-after: always;
+        break-after: page;
+        break-inside: avoid;
+        box-shadow: none;
+        border-style: none;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .PrintPage-content {
+        margin: auto;
+        height: 100%;
+    }
+}
+
+/* ProgressPanel */
+
+.ProgressPanel-large {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* RemoteTextEditor */
+
+.RemoteTextEditor-hiddenReport {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.RemoteTextEditor-hiddenReport textarea {
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Report Composer */
+
+.ReportComposer-whiteSpace {
+    white-space: pre-wrap;
+}
+
+/* ReportDialog */
+
+.ReportDialog-reportText {
+    white-space: pre-wrap;
+}
+.ReportDialog-templateArea input {
+    border-radius: 4px !important;
+}
+.ReportDialog-templateArea .dropdown-menu {
+    max-height: 60vh !important;
+}
+.ReportDialog-templateArea {
+    display: none;
+}
+.ReportDialog-inputArea {
+    display: none;
+}
+.ReportDialog-textArea {
+    resize: none;
+}
+.ReportDialog-noReport .ReportDialog-templateArea {
+    display: inline-block;
+}
+.ReportDialog-noReport .ReportDialog-reportArea {
+    display: none;
+}
+.ReportDialog-noReport .ReportDialog-inputArea {
+    display: flex;
+    flex-grow: 1;
+}
+.ReportDialog-noReport .ReportDialog-addendumArea {
+    display: none;
+}
+.ReportDialog-noReport .ReportDialog-addendumButton {
+    display: none;
+}
+.ReportDialog-addendumTextArea {
+    flex-grow: 1;
+    min-height: 9.5em !important;
+    resize: none;
+}
+.ReportDialog-readOnly .ReportDialog-controls {
+    display: none;
+}
+.ReportDialog-readOnly .ReportDialog-inputArea {
+    display: none;
+}
+.ReportDialog-readOnly.ReportDialog-noReport .ReportDialog-templateArea {
+    display: none;
+}
+.ReportDialog-readOnly.ReportDialog-noReport .ReportDialog-reportArea {
+    display: flex;
+}
+.ReportDialog-readOnly.ReportDialog-noReport .ReportDialog-reportText::after {
+    content: "This study is read-only. Cannot create a report.";
+    color: var(--bs-danger);
+    font-weight: bold;
+}
+.ReportDialog-amendmentTextArea {
+    flex-grow: 1;
+    resize: none;
+}
+.ReportDialog-reportAreaRow {
+    min-height: 3em;
+}
+.ReportDialog-reportTextPosition {
+    left: 0;
+    right: 0;
+}
+
+/* ReportDock */
+
+.ReportDock-mainReportDock {
+    width: 400px;
+    min-width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    flex-basis: 1px;
+    flex-grow: 1;
+}
+
+/* ReportTemplateSearchBar */
+.ReportTemplateSearchBar-templateSearchArea .dropdown-menu {
+    max-height: 60vh !important;
+}
+.ReportTemplateSearchBar-templateSearchArea .dropdown-item {
+    cursor: pointer;
+}
+.ReportTemplateSearchBar-templateSearchArea input {
+    border-radius: 0.375rem !important;
+}
+.ReportTemplateSearchBar-clearSearch {
+    position: absolute;
+    right: 0;
+    z-index: 6;
+    font-size: .7rem;
+    height: 100%;
+    padding: 0 0.7em 0 0.7em;
+}
+input:placeholder-shown + * + .ReportTemplateSearchBar-clearSearch {
+    display: none;
+}
+
+/* ReportTemplateView */
+
+.ReportTemplateView-mainPanel {
+    height: 98vh;
+}
+.ReportTemplateView-contentsSection {
+    min-height: 0px; /* IMPORTANT: you need this for non-chrome browsers */
+}
+.ReportTemplateView-overflowContainer {
+    flex: 1; /* do I need this? */
+    overflow: hidden;
+}
+.ReportTemplateView-ruleSection {
+    height: 100%;
+    overflow: auto;
+}
+.ReportTemplateView-templateNameLabel {
+    border: none;
+    font-weight: bold;
+}
+.ReportTemplateView-editNameButton,
+.ReportTemplateView-deleteTemplateButton {
+    border-radius: var(--bs-btn-border-radius) !important;
+}
+.ReportTemplateView-textarea {
+    resize: none;
+    height: 200px;
+}
+.ReportTemplateView-alert {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+}
+.ReportTemplateView-emptyState .ReportTemplateView-templateNameSection,
+.ReportTemplateView-emptyState .ReportTemplateView-roleSection,
+.ReportTemplateView-emptyState .ReportTemplateView-contentsSection,
+.ReportTemplateView-emptyState .ReportTemplateView-footerSection,
+.ReportTemplateView-newState .ReportTemplateView-defaultTemplateRow,
+.ReportTemplateView-editState .ReportTemplateView-defaultTemplateRow,
+.ReportTemplateView-defaultState .ReportTemplateView-roleSection,
+.ReportTemplateView-defaultState .ReportTemplateView-ruleSection,
+.ReportTemplateView-defaultState .ReportTemplateView-deleteTemplateButton {
+    display: none;
+}
+
+/* Save Preview Modal */
+
+.SavePreviewModal-spinner {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* SaveWindowRow */
+
+.SaveWindowRow-saveOption {
+    min-width: 6.5em;
+}
+
+/* ScopeMenuItem */
+
+.ScopeMenuItem-everywhereScope {
+    color: #1A1A1E !important;
+}
+.ScopeMenuItem-customerScope {
+    color: #1A1A1E !important;
+}
+.ScopeMenuItem-streamScope {
+    color: #3C7DB5 !important;
+}
+.ScopeMenuItem-tagScope {
+    color: #BA873D !important;
+    padding-left: 2rem;
+}
+
+/* SeriesPlaybackPanel */
+
+.SeriesPlaybackPanel-playbackPanel .btn {
+    color: var(--bs-gray-400);
+    box-shadow: none;
+}
+.SeriesPlaybackPanel-playbackPanel .btn:hover {
+    color: var(--bs-light);
+}
+.SeriesPlaybackPanel-playbackPanel .dropdown-menu .btn {
+    border: 2px transparent solid;
+    margin: 10px;
+}
+.SeriesPlaybackPanel-playbackPanel .dropdown-menu .btn.active {
+    color: var(--bs-light);
+    border-color: var(--bs-light);
+}
+
+.SeriesPlaybackPanel-slider {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    outline: none;
+}
+.SeriesPlaybackPanel-slider::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 100%;
+}
+.SeriesPlaybackPanel-slider::-moz-range-thumb {
+    border-radius: 100%;
+}
+
+.SeriesPlaybackPanel-frameSliderContainer {
+    position: relative;
+}
+
+.SeriesPlaybackPanel-frameSlider {
+    height: 5px;
+    border-radius: 5px;
+    vertical-align: -2px;  /* Vertical align is centered at bottom edge of element, offset by ~1/2 height to truly center */
+    background-color: rgba(var(--bs-light-rgb), 0.7);
+    background-image: linear-gradient(var(--bs-primary), var(--bs-primary));
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+}
+.SeriesPlaybackPanel-frameSlider.SeriesPlaybackPanel-active {
+    background-color: var(--bs-light);
+}
+.SeriesPlaybackPanel-frameSlider::-webkit-slider-thumb {
+    background-color: var(--bs-primary);
+    width: 0;
+    height: 0;
+    transition: width .15s, height .15s;
+}
+.SeriesPlaybackPanel-frameSlider::-moz-range-thumb {
+    background-color: var(--bs-primary);
+    width: 0;
+    height: 0;
+    transition: width .15s, height .15s;
+    box-sizing: border-box;
+    border: none;
+}
+.SeriesPlaybackPanel-frameSlider.SeriesPlaybackPanel-active::-webkit-slider-thumb {
+    width: 20px; /* IMPORTANT: If this value changes, update corresponding value in java file*/
+    height: 20px;
+}
+/* Keep -moz-range-thumb structured differently from -webkit-slider-thumb or there will be a bug when compiled */
+.SeriesPlaybackPanel-frameSlider.SeriesPlaybackPanel-active::-moz-range-thumb {
+    height: 20px;
+    width: 20px; /* IMPORTANT: If this value changes, update corresponding value in java file*/
+}
+
+.SeriesPlaybackPanel-fpsSlider {
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--bs-gray-600);
+}
+.SeriesPlaybackPanel-fpsSlider:hover {
+    background-color: var(--bs-gray-700);
+}
+.SeriesPlaybackPanel-fpsSlider:active {
+    background-color: var(--bs-gray-600);
+}
+.SeriesPlaybackPanel-fpsSlider::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: var(--bs-gray-400);
+    border: 1px var(--bs-gray-600) solid;
+}
+.SeriesPlaybackPanel-fpsSlider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: 1px var(--bs-gray-600) solid;
+    box-sizing: border-box;
+}
+.SeriesPlaybackPanel-fpsSlider:active::-webkit-slider-thumb {
+    background-color: var(--bs-light);
+}
+.SeriesPlaybackPanel-fpsSlider:active::-moz-range-thumb {
+    background-color: var(--bs-white);
+}
+
+.SeriesPlaybackPanel-display {
+    position: absolute;
+    top: -2.2em;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+.SeriesPlaybackPanel-display.SeriesPlaybackPanel-visible {
+    opacity: 1;
+    z-index: 2;
+}
+
+.SeriesPlaybackPanel-frameDisplay {
+    min-width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    color: var(--bs-light);
+    background-color: var(--bs-primary);
+    border-radius: 0.6em;
+}
+
+.SeriesPlaybackPanel-caretDisplay {
+    width: 0;
+    height: 0;
+    border: 0.5em transparent solid;
+    border-top-color: var(--bs-primary);
+    margin: auto;
+}
+
+.SeriesPlaybackPanel-fpsContainer {
+    color: var(--bs-light);
+    text-align: center;
+    padding: 5px;
+}
+
+.SeriesPlaybackPanel-warningContainer {
+    color: var(--bs-warning);
+    border: 2px var(--bs-warning) solid;
+    border-radius: 5px;
+    font-size: 0.8em;
+    text-align: center;
+}
+.SeriesPlaybackPanel-warningContainer ul {
+    text-align: left;
+}
+
+/* SnapshotRowWidget */
+
+.SnapshotRowWidget-deleteButton {
+    border-bottom: 1px solid #ccc;
+}
+
+/* Stitcher */
+
+.Stitcher-alert {
+    position: absolute;
+    z-index:2;
+    bottom: 0;
+}
+
+/* StitcherThumbnail */
+
+.StitcherThumbnail-thumbnail {
+    background-color: white;
+    cursor: move;
+}
+
+.StitcherThumbnail-thumbnail.StitcherThumbnail-selected {
+    background-color: var(--bs-primary);
+}
+
+.StitcherThumbnail-thumbnail.StitcherThumbnail-selected .btn {
+    color: white;
+}
+
+.StitcherThumbnail-image {
+    user-select: none;
+    object-fit: cover;
+    max-height: 50px;
+    max-width: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* StitcherThumbnailBar */
+
+.StitcherThumbnailBar-verticalScroll {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    background-color: #f0f0f0;
+}
+
+.StitcherThumbnailBar-verticalScroll:hover {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+
+/* StudyDescriptionPreferencesPanel */
+
+.StudyDescriptionPreferencesPanel-studyDescription {
+    min-width: 44em;
+}
+
+/* StudyNotesPanelImpl */
+
+.StudyNotesPanelImpl-textArea {
+    height: 100%;
+    resize: none;
+}
+.StudyNotesPanelImpl-main {
+    width: 400px;
+    min-width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    flex-basis: 1px;
+    flex-grow: 1;
+}
+
+/* StudyView */
+
+.StudyView-alert {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+}
+.StudyView-showMenus {
+    position: absolute;
+    z-index: 2;
+}
+.StudyView-showMenus button {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    border-radius: 10px 0 0 0;
+}
+.StudyView-workspace {
+    background: black;
+}
+@media print {
+    .StudyView-workspace {
+        background: white !important;
+    }
+    .StudyView-workspace * {
+        visibility: visible;
+    }
+}
+
+/* TemplateDialogPanel */
+
+.TemplateDialogPanel-breadcrumb {
+    color: #0d6efd !important;
+}
+
+.TemplateDialogPanel-breadcrumb:hover {
+    color: #0a58ca !important;
+}
+.TemplateDialogPanel-templateList {
+    min-height: 4.5em;
+}
+.TemplateDialogPanel-mainTemplate {
+    width: 300px;
+    min-width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    flex-basis: 1px;
+    flex-grow: 1;
+}
+
+/* TemplateFavoriteItem */
+
+.TemplateFavoriteItem-highlight:hover {
+    background-color: #f5f5f5;
+}
+
+/* TemplateNavLink */
+
+.TemplateNavLink-header {
+    color: #818181;
+    background-color: #eee;
+    cursor: default;
+}
+.TemplateNavLink-clickable .btn {
+    padding: 0 0.1rem;
+}
+.TemplateNavLink-clickable .btn:focus {
+    box-shadow: none;
+}
+.TemplateNavLink-clickable:hover {
+    background-color: #f5f5f5;
+}
+
+/* TemplateSearchBar */
+
+.input-group .btn-close.TemplateSearchBar-clearSearch {
+    position: absolute;
+    right: 72px;
+    z-index: 3;
+    font-size: .7rem;
+    height: 100%;
+    padding: 0 0.7em 0 0.7em;
+}
+input:placeholder-shown + .TemplateSearchBar-clearSearch {
+    display: none;
+}
+
+/* TextInput */
+.TextInput-resizeNone {
+    resize: none;
+}
+
+/* ThumbnailBar */
+
+.ThumbnailBar-contrastA {
+    background-color:#0D0D0D;
+    width:20px;
+    height:20px;
+    border:10px solid #000000;
+    box-sizing: initial;
+}
+.ThumbnailBar-contrastB {
+    background-color:#F2F2F2;
+    width:20px;
+    height:20px;
+    border:10px solid #FFFFFF;
+    box-sizing: initial;
+}
+
+/* Bookmark toggle CSS */
+
+.ThumbnailBar-margin {
+    margin: 3px;
+    /*height: 34px;*/
+}
+.ThumbnailBar-toggle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 32px;
+    min-height: 32px;
+    cursor: pointer;
+}
+.ThumbnailBar-toggle input {
+    visibility: hidden;
+}
+.ThumbnailBar-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 16px;
+    border: 1px solid var(--bs-gray-500);
+    transition: 400ms;
+}
+.ThumbnailBar-slider:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background-color: var(--bs-info);
+    background-clip: content-box;
+    border: 2px solid rgba(0,0,0,0);
+    border-radius: 16px;
+    transition: 400ms;
+}
+input:checked + .ThumbnailBar-toggleUI .ThumbnailBar-slider {
+    background-color: var(--bs-primary);
+}
+input:checked + .ThumbnailBar-toggleUI .ThumbnailBar-slider:before {
+    transform: translateX(100%);
+    background-color: var(--bs-white);
+}
+.ThumbnailBar-bookmarkIcon.fa-stack {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 75%;
+    top: 50%;
+    color: var(--bs-secondary);
+    font-size: 11px;
+    transition: color 400ms;
+}
+input:checked + .ThumbnailBar-toggleUI .ThumbnailBar-bookmarkIcon {
+    color: #febc2e;
+}
+.h-thumb-bar-only.slider:before {
+    width: 100%;
+    height: 50%;
+}
+input:checked + .ThumbnailBar-toggleUI .h-thumb-bar-only.slider:before {
+    transform: translateY(100%);
+}
+.h-thumb-bar-only .ThumbnailBar-bookmarkIcon {
+    left: 50%;
+    top: 75%;
+}
+.ThumbnailBar-textShadow {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* ThumbnailButton */
+
+.ThumbnailButton-thumbnailDescription {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    width: 85%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    pointer-events: none;
+}
+.ThumbnailButton-thumbnail {
+    margin: 1px;
+    min-width: 74px;
+    min-height: 74px;
+    background-color: black;
+    border-color: var(--bs-gray-500);
+    transition: border-color 200ms;
+}
+.ThumbnailButton-thumbnail:hover {
+    border-color: var(--bs-white);
+}
+.ThumbnailButton-thumbnail.ThumbnailButton-thumbnailDown {
+    border: solid 1px var(--bs-primary);
+    transition: border-color 0ms;
+}
+.ThumbnailButton-thumbnail.ThumbnailButton-thumbnailDown:hover {
+    border-color: var(--bs-primary);
+}
+
+/* ThumbnailGroup */
+
+.ThumbnailGroup-container {
+    background-color: #333;
+    border-radius: 5px;
+    position: relative;
+    padding: 2px;
+    margin-bottom: 0.1rem;
+}
+.ThumbnailGroup-label {
+    font-size: 12px;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.2) 0px -1px 0px;
+}
+
+/* Viewer */
+
+@media print {
+    .Viewer-viewer > * {
+        position: absolute !important;
+        left: 0px !important;
+        top: 0px !important;
+        right: 0px !important;
+        bottom: 0px !important;
+    }
+}
+@media screen {
+    .Viewer-printCaptureMode {
+        padding-right: 316px;
+    }
+    .Viewer-printCaptureMode .thumb-bar-container:first-child {
+        width: 100% !important;
+    }
+    .Viewer-printCaptureMode .StudyView-workspace {
+        background-image: radial-gradient(#eeeeee, #aaaaaa);
+    }
+    .Viewer-printCaptureMode .StudyView-canvases {
+        width: 720px;
+        height: 959px;
+        border: solid 48px white;
+        background: white;
+        box-shadow: rgba(60, 60, 60, 0.15) 0 1px 3px 1px;
+        box-sizing: content-box;
+    }
+}
+* {
+    touch-action: pan-x pan-y; /* Ensures elements will not allow user to scale page on touch devices */
+}
+.Viewer-viewer {
+    background-color: var(--bs-white);
+}
+.Viewer-toolbar > .btn {
+    color: rgba(var(--bs-info-rgb));
+}
+.Viewer-toolbar.dropdown-menu > .btn {
+    width: 100%;
+}
+.Viewer-toolbar .btn:focus {
+    box-shadow: none;
+}
+.Viewer-toolbar > .btn:hover {
+    color: var(--bs-primary);
+}
+.Viewer-toolbar > .btn.active, .toolbar > .btn.show, .toolbar > .btn:active {
+    color: var(--bs-primary);
+    border-color: transparent;
+}
+.Viewer-toolbar > .btn.btn-outline-primary {
+    border: 1px solid transparent;
+    background-clip: padding-box;
+}
+.Viewer-toolbar > .btn.btn-outline-primary:hover, .Viewer-toolbar > .btn.btn-outline-primary.active,  .Viewer-toolbar > .btn.btn-outline-primary.show {
+    color: white;
+}
+.Viewer-toolbar > .btn.btn-outline-primary.active:hover {
+    background-color: var(--bs-primary);
+}
+.Viewer-toolbar hr {
+    min-height: 1px;
+}
+.Viewer-toolbarButton {
+    position: relative;
+}
+.Viewer-toolbarButton .fa-caret-up {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0.13em;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: var(--bs-light);
+}
+.Viewer-toolbarButton.active .fa-caret-up {
+    visibility: visible;
+}
+#docksMenu.dropdown-menu {
+    min-width: auto;
+}
+.Viewer-offscreen {
+    z-index: -1;
+}
+.Viewer-iconOnly * {
+    display: none;
+}
+.Viewer-iconOnly i {
+    display: initial;
+}
+.Viewer-smallStack {
+    font-size: 0.65em;
+}
+.Viewer-shortcut {
+    visibility: hidden;
+}
+button:hover .Viewer-shortcut {
+    visibility: visible;
+}
+.Viewer-printCaptureMode .StudyView-canvases {
+    transform-origin: top left;
+    transform: translate(var(--print-capture-translate-one), var(--print-capture-translate-two)) scale(var(--print-capture-scale)) translate(var(--print-capture-translate-three), var(--print-capture-translate-four));
+}
+.Viewer-wlDropdown {
+    overflow-y: scroll;
+    max-height: 600px;
+    width: 371px;
+}
+.patient-portal .Viewer-toolbar-center {
+    margin-left: 8em;
+}
+
+/* Window Level Dropdown Row */
+
+.WindowLevelDropdownRow-wlItem {
+    display: inline-flex;
+}
+.WindowLevelDropdownRow-maxW {
+    white-space: normal;
+    overflow: hidden;
+    display:block;
+}
+.WindowLevelDropdownRow-shortcutCtrl {
+    visibility: hidden;
+}
+span:hover .WindowLevelDropdownRow-shortcutCtrl {
+    visibility: visible;
+}
+
+/* WindowLevelPreferencesPanel */
+
+.WindowLevelPreferencesPanel-listPanel {
+    background-color: #ffffff;
+    color:black;
+    vertical-align: middle;
+}
+.WindowLevelPreferencesPanel-listPanel > div > table > tbody > tr > td {
+    vertical-align:middle;
+}
+
+/* WindowLevelPreferencesTable */
+
+.WindowLevelPreferencesTable-cellAlignment {
+    text-align: -webkit-center;
+}

@@ -1,0 +1,191 @@
+@font-face {
+    font-family: medstratFont;
+    src: url(../webfont/fontmedstrat.ttf);
+}
+.icon-line:before {
+    font-family: medstratFont;
+    content: "\0061";    /* a */
+}
+.icon-angle:before {
+    font-family: medstratFont;
+    content: "\0062";    /* b */
+}
+.icon-smartAngle:before {
+    font-family: medstratFont;
+    content: "\0063";    /* c */
+}
+.icon-cobbAngle:before {
+    font-family: medstratFont;
+    content: "\0064";    /* d */
+}
+.icon-circle:before {
+    font-family: medstratFont;
+    content: "\0065";    /* e */
+}
+.icon-parallel:before {
+    font-family: medstratFont;
+    content: "\0066";    /* f */
+}
+.icon-perpendicular:before {
+    font-family: medstratFont;
+    content: "\0067";    /* g */
+}
+.icon-magnify:before {
+    font-family: medstratFont;
+    content: "\0068";    /* h */
+}
+.icon-transform:before {
+    font-family: medstratFont;
+    content: "\0069";    /* i */
+    font-size: 1.1em;
+}
+.icon-wlROI:before {
+    font-family: medstratFont;
+    content: "\006a";    /* j */
+    font-size: 1.1em;
+}
+.icon-invert:before {
+    font-family: medstratFont;
+    content: "\006b";    /* k */
+    font-size: 1.2em;
+}
+.icon-pelvis:before {
+    font-family: medstratFont;
+    content: "\006c";    /* l */
+    font-size: 1.1em;
+}
+.icon-knee:before {
+    font-family: medstratFont;
+    content: "\006d";    /* m */
+    font-size: 1.1em;
+}
+.icon-spine:before {
+    font-family: medstratFont;
+    content: "\006e";    /* n */
+    font-size: 1.1em;
+}
+.icon-ruler:before {
+    font-family: medstratFont;
+    content: "\006f";    /* o */
+}
+.icon-loop:before {
+    font-family: medstratFont;
+    content: "\0070";    /* p */
+}
+.icon-speed:before {
+    font-family: medstratFont;
+    content: "\0071";    /* q */
+}
+.icon-medstrat:before {
+    font-family: medstratFont;
+    content: "\0072";    /* r */
+}
+.icon-twoByTwo:before {
+    font-family: medstratFont;
+    content: "\0079";    /* s */
+}
+.icon-windowLevel:before {
+    font-family: medstratFont;
+    content: "\0048";    /* H */
+    font-size: 1.2em;
+}
+.icon-implant:before {
+    font-family: medstratFont;
+    content: "\0049";    /* I */
+    font-size: 1.1em;
+}
+.icon-calibration:before {
+    font-family: medstratFont;
+    content: "\004a";    /* J */
+    font-size: 1.3em;
+}
+.icon-flipHorizontal:before {
+    font-family: medstratFont;
+    content: "\004b";    /* K */
+    font-size: 1.1em;
+}
+.icon-flipVertical:before {
+    font-family: medstratFont;
+    content: "\004c";    /* L */
+    font-size: 1.1em;
+}
+.icon-noText:before {
+    font-family: medstratFont;
+    content: "\004d";    /* M */
+}
+.icon-wlToolbar:before {
+    font-family: medstratFont;
+    content: "\004e";    /* N */
+    font-size: 1.2em;
+}
+.icon-deleteAllMeasurements:before {
+    font-family: medstratFont;
+    content: "\004f";    /* O */
+}
+.icon-cd:before {
+    font-family: medstratFont;
+    content: "\0050";    /* P */
+}
+.icon-usb:before {
+    font-family: medstratFont;
+    content: "\0051";    /* Q */
+}
+.icon-hideOverlays:before {
+	font-family: medstratFont;
+	content: "\0052";    /* R */
+}
+.icon-hideAllOverlays:before {
+	font-family: medstratFont;
+	content: "\0053";    /* S */
+}
+.icon-hideTemplates:before {
+	font-family: medstratFont;
+	content: "\0054";    /* T */
+}
+.icon-hideMeasurements:before {
+	font-family: medstratFont;
+	content: "\0055";    /* U */
+}
+.icon-hideBitmap:before {
+	font-family: medstratFont;
+	content: "\0056";    /* V */
+}
+.icon-hideStudyDesc:before {
+	font-family: medstratFont;
+	content: "\0057";    /* W */
+}
+.icon-stitch:before {
+	font-family: medstratFont;
+	content: "\0058";	
+}
+.icon-savePreview:before {
+	font-family: medstratFont;
+	content: "\0059"; /* Y */	
+}
+.icon-zimmer:before {
+    font-family: medstratFont;
+    content: "\005A";   /* Z */
+    font-size: 1.1em;
+}
+.icon-bringForward:before {
+	font-family: medstratFont;
+	content: "\005b";
+}
+.icon-sendBackward:before {
+	font-family: medstratFont;
+	content: "\005d";
+}
+.icon-ellipse:before {
+	font-family: medstratFont;
+	content: "\003f";
+}
+
+.icon-rotateCounterclockwise:before {
+	font-family: medstratFont;
+	content: "\0028";
+}
+
+.icon-rotateClockwise:before {
+	font-family: medstratFont;
+	content: "\0029";
+}

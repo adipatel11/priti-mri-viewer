@@ -1,0 +1,76 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
+
+<%@ page contentType="text/html;charset=UTF-8" %>
+
+<!-- Disable session cookies as we do not use the session object -->
+<%@ page session="false" %>
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Tab icon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="fonts/viewer/6.0.0/css/FontMedstrat.css">
+    <link rel="stylesheet" href="css/6.5.0/constants.css">
+    <link rel="stylesheet" href="css/6.5.0/viewer.css">
+
+    <!-- Bootstrap -->
+    <link href="fonts/fontawesome/5.15.4/css/fontawesome-all.min.css" rel="stylesheet" type="text/css" />
+    <link href="lib/bootstrap/5.2.3/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="lib/bootstrap/5.2.3/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/6.6.0/MedstratStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/6.5.0/ResponsiveStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/6.9.0/ViewerStyles.css">
+
+    <!--                                                   -->
+    <!-- These scripts add localforage library support     -->
+    <!-- for convenient access to indexeddb local storgage -->
+    <!--                                                   -->
+    <script src="lib/localforage/1.9.0/localforage.min.js"></script>
+    <script src="js/viewer/6.3.2/viewer-starter.js"></script>
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script type="text/javascript" src="joints/joints.nocache.js"></script>
+
+    <!-- Used to generate a print image            -->
+    <script src="lib/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <div id="embedded" data-user="offline"
+         data-version="6.9.1"
+         data-offline="true"></div>
+
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body class="backgroundColor">
+
+  <!-- OPTIONAL: include this if you want history support -->
+  <iframe src='about:blank' id="__gwt_historyFrame" tabIndex='-1' class="history"></iframe>
+
+  <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+  <noscript>
+    <div class="javascriptMessage">
+      Your web browser must have JavaScript enabled
+      in order for this application to display correctly.
+    </div>
+  </noscript>
+
+  </body>
+</html>
+

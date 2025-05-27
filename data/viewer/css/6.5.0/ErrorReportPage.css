@@ -1,0 +1,26 @@
+/*
+ * Copyright 2006-2023 Medstrat, Inc. All rights reserved.
+ * Copyright 2024-2025 Zimmer, Inc. All rights reserved.
+ * See the accompanying AUTHORS file for a complete list of authors.
+ * This file is subject to the terms and conditions defined in LICENSE.txt
+ */
+
+.ErrorReportPage-centerText {
+    text-align: center;
+}
+
+.ErrorReportPage-logo {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.ErrorReportPage-logo svg {
+    width: 100px;
+}
+
+.cls-1 {
+    fill:#00a7e1;
+}
+.cls-2 {
+    fill:#002e6d;
+}

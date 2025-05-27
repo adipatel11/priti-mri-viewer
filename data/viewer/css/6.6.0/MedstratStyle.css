@@ -1,0 +1,182 @@
+/*
+ * Copyright 2006-2023 Medstrat, Inc. All rights reserved.
+ * Copyright 2024-2025 Zimmer, Inc. All rights reserved.
+ * See the accompanying AUTHORS file for a complete list of authors.
+ * This file is subject to the terms and conditions defined in LICENSE.txt
+ */
+
+:root {
+    --bs-breadcrumb-divider: '>';
+}
+
+/* Fix for GWT SuggestBoxPopup with Bootstrap */
+.gwt-SuggestBoxPopup {
+    z-index: 2000;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+.gwt-SuggestBoxPopup td.item {
+    padding: 0.25rem;
+}
+
+.gwt-SuggestBoxPopup td.item-selected {
+    background-color: var(--bs-primary);
+    border-radius: 0.25rem;
+    color: white;
+}
+
+.bootstrapTableDefaults {
+	
+}
+
+table.table > thead {
+	border: none!important;
+}
+
+.canvasBorder {
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.selected {
+    border-color: var(--bs-primary);
+}
+
+.dropTarget {
+    border-color: #337ab7;
+    background-color: #337ab7;
+    opacity: 0.5;
+}
+
+.draggingContainer * {
+	transition: transform 200ms ease;
+}
+
+.draggingContainer * > * {
+	pointer-events: none;
+}
+
+.privacy > .modal-backdrop.show {
+    opacity: 1;
+    background-color: rgb(51,51,51);
+}
+
+.privacy > .modal.show {
+    visibility: hidden;
+}
+
+.privacy > .modal.show.loginDialog {
+    visibility: visible;
+}
+
+.mockCursor {
+    position: relative;
+}
+
+.mockCursor::after {
+    content: '';
+    width: 1px;
+    height:  var(--cursor-height);
+    background: var(--bs-body-color);
+    display: block;
+    position: absolute;
+    left:  var(--cursor-x);
+    top:  var(--cursor-y);
+    animation: cursor-blink 1s steps(1) infinite;
+}
+
+.mockCursor:focus::after {
+    display: none;
+}
+
+.leftStudyViewSelected > .modal {
+    padding-right: var(--modal-padding-right);
+}
+
+.rightStudyViewSelected > .modal {
+    padding-left: var(--modal-padding-left);
+}
+
+.patient-portal .pp-d-none {
+    display: none !important;
+}
+
+.patient-portal .pp-d-flex {
+    display: flex !important;
+}
+
+.patient-portal .pp-expand .dropdown-menu {
+    position: static;
+    display: flex;
+    border: none;
+    background: transparent;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.patient-portal .pp-expand .dropdown-toggle, .patient-portal .pp-expand .dropdown-header {
+    display: none !important;
+}
+
+@keyframes cursor-blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 100%;
+    }
+}
+
+@media screen {
+    html {
+        scroll-snap-type: y mandatory;
+    }
+    body {
+        scroll-snap-align: start;
+    }
+    .canvasBorder.selected {
+        border-width: 2px;
+    }
+}
+
+@media print {
+    html, body {
+        padding-top: 0;
+        margin: 0;
+        height: 100%;
+    }
+
+    body {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+
+    .canvasBorder {
+        border-width: 0px;
+    }
+
+    .canvas {
+        top: 50% !important;
+        left: 50% !important;
+        right: initial !important;
+        bottom: initial !important;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .unprintable {
+        display: none;
+    }
+}

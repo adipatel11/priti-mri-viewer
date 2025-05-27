@@ -1,0 +1,1 @@
+__gwt_jsonp__.Pgetauthorizedstreams.onSuccess(["//OK[6,1169,5,4,3,563,2,1,1,[\"java.util.ArrayList/4159755760\",\"com.medstrat.gwtbase.network.service.joints.user.StreamDescription/1192832962\",\"Capital Orthopaedic \\u0026 Sports Medicine\",\"joints.medstrat.com\",\"16019878200\",\"Capital\"],0,8]"]);

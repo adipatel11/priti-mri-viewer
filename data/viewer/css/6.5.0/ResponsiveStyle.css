@@ -1,0 +1,246 @@
+/*
+ * Copyright 2006-2023 Medstrat, Inc. All rights reserved.
+ * Copyright 2024-2025 Zimmer, Inc. All rights reserved.
+ * See the accompanying AUTHORS file for a complete list of authors.
+ * This file is subject to the terms and conditions defined in LICENSE.txt
+ */
+
+/* Thumbnail bar CSS */
+
+/* Default: thumb-bar is vertical */
+.v-thumb-bar-only {
+    display: unset; 
+}
+.h-thumb-bar-only {
+    display: none;
+}
+.thumb-bar-container {
+    display: flex;
+    flex-flow: row;
+}
+.thumb-bar {
+    max-width: 80px;
+    order: 0;
+}
+.thumb-scroll {
+    flex-basis: 80px;
+    scrollbar-width: thin; /* used for non-webkit/blink-based browsers */
+    overflow-x: hidden !important;
+    overflow-y: auto !important; /* used for non-webkit/blink-based browsers */
+    overflow-y: overlay !important; /* usable in webkit/blink-based browsers */
+}
+.thumb-bar img {
+    height: auto;
+}
+.thumb-group-label {
+    height: 1rem;
+}
+.thumb-group-label > * {
+    transform: translate(-50%, -50%);
+}
+.thumb-flow-aligned { /* in line with the thumbnail flow direction */
+    display: flex;
+    flex-direction: column;
+}
+.thumb-flow-perpendicular { /* perpendicular to the thumbnail flow direction */
+    display: flex;
+    flex-direction: row;
+}
+
+/* change the look of the scrollbar */
+.thumb-scroll::-webkit-scrollbar {
+    z-index: 2;
+    width: 8px;
+    height:8px;
+}
+.thumb-scroll::-webkit-scrollbar-track {
+    display: none;
+}
+.thumb-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(234, 234, 234, 0.7);
+    border-radius: 4px;
+    display: none;
+}
+.thumb-scroll:hover::-webkit-scrollbar-thumb {
+    display: block;
+}
+
+@media (orientation: portrait) {
+    /* The thumb-bar will appear horizontal */
+    .v-thumb-bar-only {
+        display: none; 
+    }
+    .h-thumb-bar-only {
+        display: unset;
+    }
+    .thumb-bar-container {
+        flex-flow: column;
+    }
+    .thumb-bar {
+        max-width: unset;
+        max-height: 80px;
+        order: 1; /* The thumb-bar will appear at the bottom */
+    }
+    .thumb-scroll {
+        overflow-x: auto !important; /* used for non-webkit/blink-based browsers */
+        overflow-x: overlay !important; /* usable in webkit/blink-based browsers */
+        overflow-y: hidden !important;
+    }
+    .thumb-flow-aligned {
+        flex-direction: row;
+    }
+    .thumb-flow-perpendicular {
+        flex-direction: column;
+    }
+    .thumb-bar img {
+        height: 70px;
+        width: auto;
+    }
+    .thumb-group-label {
+        width: 1rem;
+        height: auto;
+    }
+    .thumb-group-label > * {
+        transform: translate(-50%, -50%) rotate(270deg);
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .dropdown-expand-sm .dropdown-menu {
+        position: static;
+        display: flex;
+        border: none;
+        background: transparent;
+    }
+    
+    .position-sm-relative {
+        position: relative;
+    }
+}
+
+@media (min-width: 576px) and (orientation: portrait), (min-height: 576px) and (orientation: landscape) {
+    /* On larger devices, the user can set the thumbnail bar position */
+    
+    /* horizontal thumb bar preference */
+    
+    .h-thumb-bar .v-thumb-bar-only {
+        display: none;
+    }
+    .h-thumb-bar .h-thumb-bar-only {
+        display: unset;
+    }
+    .h-thumb-bar.thumb-bar-container {
+        flex-direction: column;
+    }
+    .h-thumb-bar .thumb-bar {
+        max-width: unset;
+        max-height: 80px;
+    }
+    .thumb-bar.thumb-bar-first {
+        order: 0;
+    }
+    .thumb-bar.thumb-bar-last {
+        order: 1;
+    }
+    .h-thumb-bar .thumb-scroll {
+        overflow-x: auto !important; /* used for non-webkit/blink-based browsers */
+        overflow-x: overlay !important; /* usable in webkit/blink-based browsers */
+        overflow-y: hidden !important;
+    }
+    .h-thumb-bar .thumb-flow-aligned {
+        flex-direction: row;
+    }
+    .h-thumb-bar .thumb-flow-perpendicular {
+        flex-direction: column;
+    }
+    .h-thumb-bar .thumb-bar img {
+        height: 70px;
+        width: auto;
+    }
+    .h-thumb-bar .thumb-group-label {
+        width: 1rem;
+        height: auto;
+    }
+    .h-thumb-bar .thumb-group-label > * {
+        transform: translate(-50%, -50%) rotate(270deg);
+    }
+    
+    /* vertical thumb bar preference */
+    
+    .v-thumb-bar .h-thumb-bar-only {
+        display: none;
+    }
+    .v-thumb-bar .v-thumb-bar-only {
+        display: block;
+    }
+    .v-thumb-bar.thumb-bar-container {
+        flex-direction: row;
+    }
+    .v-thumb-bar .thumb-bar {
+        max-width: 80px;
+        max-height: unset;
+    }
+    .v-thumb-bar .thumb-scroll {
+        overflow-x: hidden !important; /* used for non-webkit/blink-based browsers */
+        overflow-x: auto !important; /* usable in webkit/blink-based browsers */
+        overflow-y: overlay !important;
+    }
+    .v-thumb-bar .thumb-flow-aligned {
+        flex-direction: column!important;
+    }
+    .v-thumb-bar .thumb-flow-perpendicular {
+        flex-direction: row!important;
+    }
+    .v-thumb-bar .thumb-bar img {
+        height: auto;
+        width: 100%;
+    }
+    .v-thumb-bar .thumb-group-label {
+        width: auto;
+        height: 1rem;
+    }
+    .v-thumb-bar .thumb-group-label > * {
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .dropdown-expand-md .dropdown-menu {
+        position: static;
+        display: flex;
+        border: none;
+        background: transparent;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .dropdown-expand-lg .dropdown-menu {
+        position: static;
+        display: flex;
+        border: none;
+        background: transparent;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .dropdown-expand-xl .dropdown-menu {
+        position: static;
+        display: flex;
+        border: none;
+        background: transparent;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .dropdown-expand-xxl .dropdown-menu {
+        position: static;
+        display: flex;
+        border: none;
+        background: transparent;
+    }
+}

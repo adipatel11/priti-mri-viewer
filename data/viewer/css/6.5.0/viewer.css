@@ -1,0 +1,29 @@
+/*
+ * Copyright 2006-2023 Medstrat, Inc. All rights reserved.
+ * Copyright 2024-2025 Zimmer, Inc. All rights reserved.
+ * See the accompanying AUTHORS file for a complete list of authors.
+ * This file is subject to the terms and conditions defined in LICENSE.txt
+ */
+
+.backgroundColor {
+    background-color: white;
+}
+
+.history {
+    position:absolute;
+    width:0;
+    height:0;
+    border:0;
+}
+
+.javascriptMessage {
+    width: 22em;
+    position: absolute;
+    left: 50%;
+    margin-left: -11em;
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+    padding: 4px;
+    font-family: sans-serif;
+}
