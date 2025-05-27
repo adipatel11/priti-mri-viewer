@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Study List</title>
+  <link rel="stylesheet" href="data/studylist/css/studies.min.css" />
+</head>
+
+<body id="body">
+  <header>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <span class="navbar-brand">
+          <a class="navbar-text brandname" id="jointsAppLink" href="https://joints.medstrat.com/app"><i class="fas fa-cloud"></i> Joints</a>
+        </span>
+        <span class="nav navbar-nav navbar-text">Offline Mode</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="h-100">
+    <div id="maincontent" class="container-fluid h-100 overflow-auto py-2">
+      <div class="h-100 d-flex flex-column">
+        <div class="row pb-2 justify-content-between">
+          <div class="col-auto">
+            <button id='viewSelected' class="btn btn-primary text-nowrap" type="submit" disabled><i class="far fa-folder-open fa-fw"></i> View Selected</button>
+          </div>
+          <div class="col-auto">
+            <button id='viewAll' class="btn btn-primary text-nowrap" type="submit"><i class="far fa-folder-open fa-fw"></i> View All</button>
+          </div>
+        </div>
+        <div class="flex-grow-1 yFillTableContainer">
+    <table id="streamTable" class="table table-striped table-hover" style="margin-top: 0px;">
+      <thead class="stream-thead">
+        <tr>
+          <th style="width: 36px; "><label><input id="btnSelectAll" type="checkbox"><span></span></label></th>
+          <th>Name</th>
+          <th title="Patient Sex"><i class="far fa-male"></i></th>
+          <th>ID</th>
+          <th>Received</th>
+          <th>Studied</th>
+          <th title="Modality"><i class="far fa-webcam"></i></th>
+          <th>Provider</th>
+          <th title="Number of DICOMs"><i class="far fa-x-ray fa-fw" style="--fa-primary-color: gray; --fa-secondary-color: #999;"></i></th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody id="studyTableBody" class="table-group-divider">
+      </tbody>
+    </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer mt-auto py-md-2 bg-dark fixed-bottom">
+    <div class="container-fluid">
+      <div class="row justify-content-between text-muted">
+        <div class="col-auto">
+          Visit us at <a class="text-decoration-none" href="https://www.medstrat.com">www.medstrat.com</a> | <a href="https://www.medstrat.com/faq" class="text-decoration-none">FAQ</a>
+        </div>
+        <div class="col-auto">
+          Joints &copy; 2024 Zimmer, Inc. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/studylist/js/jquery-3.6.4.min.js"></script>
+  <script src="data/studylist/js/studylist.js"/></script>
+  <script src="data/studylist/js/studyrows.js"/></script>
+  <script type="text/javascript">
+    $('#btnSelectAll').change(selectAllChanged)
+    $('#viewSelected').click(viewSelected)
+    $('#viewAll').click(viewAll)
+    addStudiesToTable()
+  </script>
+</body>
+</html>
